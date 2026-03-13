@@ -187,6 +187,7 @@ The output is a ranked `IDEA_REPORT.md` with hypotheses, pilot results, reviewer
 - 🧠 **Prefer reframing over new experiments** — when both can address a weakness, chooses the cheaper path
 - 🪞 **No hiding weaknesses** — explicit rule: "Do NOT hide weaknesses to game a positive score"
 - 🔧 **Fix before re-review** — must actually implement fixes before resubmitting; no empty promises
+- 💾 **Compact recovery** — persists state (`REVIEW_STATE.json`) after each round. If the context window fills up and auto-compacts mid-loop, the workflow reads the state file and resumes from where it left off — no human intervention needed
 
 > ⚙️ MAX_ROUNDS, score threshold, and GPU limits are configurable — see [Customization](#%EF%B8%8F-customization).
 
